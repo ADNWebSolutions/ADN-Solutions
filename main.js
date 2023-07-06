@@ -9,7 +9,7 @@ window.addEventListener("scroll", function () {
 const sections = document.querySelectorAll("section");
 
 // Function to handle the scroll event
-function handleScroll(event) {
+/* function handleScroll(event) {
   event.preventDefault();
 
   const delta = event.wheelDelta || -event.detail;
@@ -34,7 +34,7 @@ function handleScroll(event) {
 }
 
 document.addEventListener("wheel", handleScroll, { passive: false });
-document.addEventListener("DOMMouseScroll", handleScroll, { passive: false });
+document.addEventListener("DOMMouseScroll", handleScroll, { passive: false }); */
 
 
 

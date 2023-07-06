@@ -96,7 +96,7 @@ body.light h1 {
 }
 
 body.light #soluciones h3 {
-  -webkit-text-stroke: 0,5px var(--color-light);
+  -webkit-text-stroke: 0, 5px var(--color-light);
 }
 
 h1,
@@ -120,7 +120,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1em 1.5em 1em;
+  padding: 1em 1.5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -128,27 +128,56 @@ nav {
   z-index: 1000;
 }
 
+nav > a {
+  -webkit-clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  background: rgba(48, 59, 59, 0.35);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 0.5em 0.5em 0.2em 0.5em;
+}
+
+body.light nav > a {
+  -webkit-clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 0.5em 0.5em 0.2em 0.5em;
+}
+
 nav a img {
   height: 3em;
 }
-
+  
 nav ul {
   list-style-type: none;
+  background: rgba(48, 59, 59, 0.25);
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.75em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  border-radius: 2em;
 }
 
 body.light nav ul {
   list-style-type: none;
-  background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border-radius: 2rem;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  padding: 1rem;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.75em;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
+  border-radius: 2rem;
 }
 
 nav ul li {
@@ -180,7 +209,11 @@ nav ul li a::after {
   display: block;
   width: 0;
   height: 0.15em;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
   position: absolute;
   bottom: -3px;
   left: 0;
@@ -193,7 +226,12 @@ nav ul li a:hover::after {
 
 nav.sticky {
   padding: 0.5em;
-  background-color: var(--color-dark);
+  background-color: transparent;
+}
+
+body.light nav.sticky {
+  padding: 0.5em;
+  background-color: transparent;
 }
 
 /* Hamburger Menu */
@@ -269,6 +307,33 @@ nav.sticky {
   .menu-icon {
     display: block;
     font-size: 1.5em;
+    background: rgba(48, 59, 59, 0.25);
+    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 0.25em 0.4em;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+  }
+
+  body.light .menu-icon {
+    display: block;
+    font-size: 1.5em;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 0.25em 0.4em;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
   }
 
   nav ul {
@@ -282,17 +347,43 @@ nav.sticky {
     width: 100%;
     background-color: var(--color-dark);
     transition: max-height 0.8s ease;
+    background: rgba(48, 59, 59, 0.25);
+    box-shadow: none;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: none;
+    padding: 0;
+  }
+
+  body.light nav ul {
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-dark);
+    background: rgba(255, 255, 255, 0.35);
+    transition: max-height 0.8s ease;
+    box-shadow: none;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: none;
+    padding: 0;
   }
 
   nav ul li {
     display: block;
     margin: 1em;
+    text-align: center;
   }
 
   nav ul li a {
     display: block;
     font-size: 1.2em;
-    text-align: center;
   }
 
   #menu-toggle {
@@ -316,8 +407,8 @@ nav.sticky {
 }
 
 .adn {
-  filter: blur( 1.8px );
-  -webkit-filter: blur( 1.8px );
+  filter: blur(1.8px);
+  -webkit-filter: blur(1.8px);
 }
 
 #inicio .banner {
@@ -334,6 +425,7 @@ nav.sticky {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   font-size: 3em;
+  padding: 0 1rem;
 }
 
 .outline-text {
@@ -452,9 +544,13 @@ nav.sticky {
   height: 200px;
   margin: 0.5em;
   border: 1px solid var(--color-light);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 16px 0 rgba(252, 244, 207, 0.5);
   transition: transform 0.3s ease;
   cursor: pointer;
+}
+
+body.light .proyecto {
+  box-shadow: 0 2px 16px 0 rgba(0, 8, 8, 0.5);
 }
 
 .proyecto:hover {
@@ -747,7 +843,7 @@ button:hover {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-footer{
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
