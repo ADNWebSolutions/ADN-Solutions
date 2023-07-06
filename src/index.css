@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
 
 ::-webkit-scrollbar {display: none;}  
 .solutions-section-bg {
@@ -114,7 +115,7 @@ img{
   grid-column: 2 / span 2;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES COLMENA*/
 @media screen and (min-width:270px) and (max-width:770px) {
   .gallery-item:nth-of-type(odd){
       grid-column: 2 / span 2;
