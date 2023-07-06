@@ -43,7 +43,10 @@ const mockUsers = [
         ghName: 'MarceloZych',
         github: 'https://github.com/MarceloZych'
     },
-    
+    {
+        ghName: 'EdGhioldi',
+        github: 'https://github.com/EdGhioldi'
+    },
 ]
 export default function Team() {
     return (
@@ -95,15 +98,27 @@ export default function Team() {
                     `}>
                 <div className={`
                     gallery
+                    mx-auto
+                    grid
+                    justify-center
+                    gap-2
                     `}>
                     {mockUsers.map((user,key) => (
-                        <div className="gallery-item" key={key}>
+                        <div className={`
+                        gallery-item
+                        h-32
+                        hover:scale-105 transition-transform duration-700 text-center uppercase font-light 
+                        `} key={key}>
                             <a className={`
                             hover:scale-105 
                             transition-transform 
                             duration-300
                             `} href={user.github} target="_blank">
                                 <img className={`
+                                w-full
+                                h-full
+                                object-cover
+                                cursor-pointer
                                 `}
                                 src={`https://unavatar.io/github/${user.ghName}`} alt="" />
                                 <div className={`
