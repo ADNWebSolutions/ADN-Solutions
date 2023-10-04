@@ -54,7 +54,7 @@ export default function Team() {
                     Somos un equipo de profesionales con sede en Argentina, dedicados a la creación de soluciones digitales de calidad mundial que ayudan a las empresas a ofrecer servicios y experiencias excepcionales a usuarios de todo el mundo.</p>
             </div>
             <div className={`m-0 md:w-1/2`}>
-                <div className={`gallery mx-auto grid max-w-3xl justify-center gap-2`}>
+                <div className={`gallery mx-auto grid justify-center gap-2`}>
                     {mockUsers.map((user,key) => (
                         <div className={`gallery-item h-32 hover:scale-105 transition-transform duration-700 text-center uppercase font-light`} key={key}>
                             <a className={`hover:scale-105 transition-transform duration-300`} href={user.github} target="_blank">
