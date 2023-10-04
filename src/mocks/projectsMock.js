@@ -12,14 +12,14 @@ const proyectsMock = [
         url: 'https://ecoambientaldesinfecciones.com.ar',
         img: ecoImg,
         gif: ecoGif,
-        project: "Eco Ambiental | Control de plagas"
+        project: "Eco Ambiental"
     },
     {
         id: crypto.randomUUID(),
         url: 'https://adnwebsolutions.github.io/ozonica/#',
         img: ozonicaImg,
         gif: ozonicaGif,
-        project: "Ozónica | Fábrica de ozonizadores"
+        project: "Ozónica"
     },
     {
         id: crypto.randomUUID(),
