@@ -1,25 +1,31 @@
-// galería online de imágenes: https://imgbox.com/gallery/edit/RqZ3O4NdHZ/nEdwCXhMUVAecwjd
+import ecoImg from '../assets/projectsImg/eco.png'
+import ecoGif from '../assets/projectsImg/ecogif.gif'
+import ozonicaImg from '../assets/projectsImg/ozonica.png'
+import ozonicaGif from '../assets/projectsImg/ozonicaGif.gif'
+import adnImg from '../assets/projectsImg/ADN.png'
+import adnGif from '../assets/projectsImg/adnGif.gif'
+
 
 const proyectsMock = [
     {
         id: crypto.randomUUID(),
         url: 'https://ecoambientaldesinfecciones.com.ar',
-        img: 'https://images2.imgbox.com/5a/39/eoSjY1Hi_o.png',
-        gif: 'https://images2.imgbox.com/d8/4d/xljqpuGE_o.gif',
+        img: ecoImg,
+        gif: ecoGif,
         project: "Eco Ambiental | Control de plagas"
     },
     {
         id: crypto.randomUUID(),
         url: 'https://adnwebsolutions.github.io/ozonica/#',
-        img: 'https://images2.imgbox.com/c1/a8/OPE57jbx_o.png',
-        gif: 'https://images2.imgbox.com/9d/36/5HND5nmX_o.gif',
+        img: ozonicaImg,
+        gif: ozonicaGif,
         project: "Ozónica | Fábrica de ozonizadores"
     },
     {
         id: crypto.randomUUID(),
         url: 'https://adnwebsolutions.github.io/ADN-Solutions/',
-        img: 'https://images2.imgbox.com/5d/02/wI8YppSl_o.png',
-        gif: 'https://images2.imgbox.com/c9/a3/CCZYoNeV_o.gif',
+        img: adnImg,
+        gif: adnGif,
         project: "ADN Solutions"
     }
 
