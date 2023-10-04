@@ -35,10 +35,10 @@ const mockUsers = [
         ghName: 'MarceloZych',
         github: 'https://github.com/MarceloZych'
     },
-    /* {
+    {
         ghName: 'EdGhioldi',
         github: 'https://github.com/EdGhioldi'
-    }, */
+    },
 ]
 export default function Team() {
     return (
