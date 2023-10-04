@@ -1,61 +1,28 @@
-import debbiWeb from '../assets/projectsImg/debbiWeb.gif'
-import arielWeb from '../assets/projectsImg/arielWeb.gif'
-import francoWeb from '../assets/projectsImg/francoWeb.gif'
-import kapeeWeb from '../assets/projectsImg/kapeeWeb.gif'
-import lucaWeb from '../assets/projectsImg/lucaWeb.gif'
-import marcosWeb from '../assets/projectsImg/marcosWeb.gif'
-
-import arielStatic from '../assets/projectsImg/arielStatic.avif'
-import debbiStatic from '../assets/projectsImg/debbiStatic.avif'
-import marcosStatic from '../assets/projectsImg/marcosStatic.avif'
-import francoStatic from '../assets/projectsImg/francoStatic.avif'
-import lucaStatic from '../assets/projectsImg/lucaStatic.avif'
-import kapeeStatic from '../assets/projectsImg/kapeeStatic.avif'
+// galería online de imágenes: https://imgbox.com/gallery/edit/RqZ3O4NdHZ/nEdwCXhMUVAecwjd
 
 const proyectsMock = [
     {
         id: crypto.randomUUID(),
-        url: 'https://debiabril.github.io/portfolio/',
-        img: debbiStatic,
-        gif: debbiWeb,
-        project: "Portfolio de Debii"
+        url: 'https://ecoambientaldesinfecciones.com.ar',
+        img: 'https://images2.imgbox.com/5a/39/eoSjY1Hi_o.png',
+        gif: 'https://images2.imgbox.com/d8/4d/xljqpuGE_o.gif',
+        project: "Eco Ambiental | Control de plagas"
     },
     {
         id: crypto.randomUUID(),
-        url: 'https://mockup-portfolio-hardcoded-ooi0e023a-ariellevita.vercel.app',
-        img: arielStatic,
-        gif: arielWeb,
-        project: "Portfolio de Ariel"
+        url: 'https://adnwebsolutions.github.io/ozonica/#',
+        img: 'https://images2.imgbox.com/c1/a8/OPE57jbx_o.png',
+        gif: 'https://images2.imgbox.com/9d/36/5HND5nmX_o.gif',
+        project: "Ozónica | Fábrica de ozonizadores"
     },
     {
         id: crypto.randomUUID(),
-        url: 'https://marcoscakin.github.io/amazingEvents_Maidana/',
-        img: marcosStatic,
-        gif: marcosWeb,
-        project: "Proyecto de Marcos"
-    },
-    {
-        id: crypto.randomUUID(),
-        url: 'https://tsuramii.github.io/ADN-Solutions-Mockup/',
-        img: lucaStatic,
-        gif: lucaWeb,
-        project: "Proyecto de Luca"
-    },
-    {
-        id: crypto.randomUUID(),
-        url: 'http://www.franco-miguez.com',
-        img: francoStatic,
-        gif: francoWeb,
-        project: "Portfolio de Franco"
-    },
-    {
-        id: crypto.randomUUID(),
-        url: 'https://kapee87.github.io/Barberia-Alura/',
-        img: kapeeStatic,
-        gif: kapeeWeb,
-        project: "Proyecto de Kapee"
-    },
-    
+        url: 'https://adnwebsolutions.github.io/ADN-Solutions/',
+        img: 'https://images2.imgbox.com/5d/02/wI8YppSl_o.png',
+        gif: 'https://images2.imgbox.com/c9/a3/CCZYoNeV_o.gif',
+        project: "ADN Solutions"
+    }
+
 ]
 
 export default proyectsMock;
