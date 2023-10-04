@@ -41,22 +41,22 @@ function Contact() {
                 <h1 className="text-3xl font-bold text-center xl:text-5xl">Tus clientes ya están en Internet, <span className="gradient-text">¿Y vos?</span></h1>
                 <p className="text-center md-4 md:mb-9 xl:text-2xl">No te quedes atrás sin presencia en línea. Creamos sitios web modernos y funcionales que se adaptan a
                     tus necesidades y atraen a tus clientes. </p>
-                <label for="name">Nombre</label>
+                <label htmlFor="name">Nombre</label>
                 <input type="text" id="name" name="name" placeholder="Ingrese su nombre completo" required />
 
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Ingrese su dirección de correo electrónico"
                     required />
 
-                <label for="servicio">Servicio de interés</label>
-                <select id="servicio" className="w-1/2" name='servicio'>
-                    <option value="" disabled selected>Seleccione un servicio de interés</option>
+                <label htmlFor="servicio">Servicio de interés</label>
+                <select id="servicio" className="w-1/2" name='servicio' defaultValue="">
+                    <option value="" disabled>Seleccione un servicio de interés</option>
                     <option value="Diseño de sitios web">Diseño de sitios web</option>
                     <option value="Desarrollo de aplicaciones web">Desarrollo de aplicaciones web</option>
                     <option value="Optimización de SEO">Optimización de SEO</option>
                 </select>
 
-                <label for="message">Mensaje</label>
+                <label htmlFor="message">Mensaje</label>
                 <textarea className="resize-y" id="message" name="message" rows="5"
                     placeholder="Cuéntenos sobre su proyecto o requerimientos" required></textarea>
 
